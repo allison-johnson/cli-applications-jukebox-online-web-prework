@@ -22,7 +22,13 @@ end #method
 def play(arr)
   puts "Please enter a song name or number:"
   user_choice = gets.strip
-  
+  if arr.include?(user_choice.to_s)
+    puts "Playing #{user_choice}"
+  elsif user_choice.to_i <= arr.length
+    puts "Playing #{arr[user_choice.to_i - 1]}"
+  else
+    puts "Invalid input, please try again."
+  end #if
 end #method
 
 def list(arr)
