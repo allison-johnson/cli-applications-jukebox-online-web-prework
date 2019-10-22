@@ -50,7 +50,7 @@ def run()
     if user_command == "help"
       help()
     elsif user_command == "play"
-      play()
+      play(songs)
     elsif user_command == "list"
       list(songs)
     end #if
