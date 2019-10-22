@@ -19,13 +19,13 @@ def help()
   puts "- exit : exits this program"
 end #method
 
-def play(arr)
+def play()
   puts "Please enter a song name or number:"
   user_choice = gets.strip
-  if arr.include?(user_choice.to_s)
+  if songs.include?(user_choice.to_s)
     puts "Playing #{user_choice}"
-  elsif user_choice.to_i < arr.length
-    puts "Playing #{arr[user_choice.to_i]}"
+  elsif user_choice.to_i < songs.length
+    puts "Playing #{songs[user_choice.to_i]}"
   else
     puts "Invalid input, please try again."
   end #if
