@@ -55,4 +55,5 @@ def run()
       list(songs)
     end #if
   end #while
+  exit_jukebox()
 end #method
