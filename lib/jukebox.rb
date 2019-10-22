@@ -40,9 +40,19 @@ def list(arr)
 end #method
 
 def exit_jukebox()
-  
+  puts "Goodbye"
 end #method
 
 def run()
-  
+  puts "Please enter a command:"
+  user_command = gets.strip
+  while user_command != "exit" do
+    if user_command == "help"
+      help()
+    elsif user_command == "play"
+      play(songs)
+    elsif user_command == "list"
+      list(songs)
+    end #if
+  end #while
 end #method
