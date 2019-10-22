@@ -46,12 +46,12 @@ end #method
 def run()
   puts "Please enter a command:"
   user_command = gets.strip
-  while user_command != "exit" do
-    if user_command == "help"
+  while user_command != 'exit' do
+    if user_command == 'help'
       help()
-    elsif user_command == "play"
+    elsif user_command == 'play'
       play(songs)
-    elsif user_command == "list"
+    elsif user_command == 'list'
       list(songs)
     end #if
 	puts "Please enter a command:"
